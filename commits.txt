@@ -1,0 +1,12 @@
+8/8/2021
+    Create repository via GitHub website
+    Create local folder and file, initiate local repository
+        Command: git init
+    Initial commit
+        Command: git add .
+        Command: git commit -m "Initial commit."
+    Link to remote repository
+        Command: git remote add origin https://github.com/SteveHoneck/gitTest.git
+                git branch -M main
+                git push -u origin main
+
