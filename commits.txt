@@ -33,3 +33,45 @@
         Command: git add .
         Command: git commit -m "3rd commit, branch 1."    
         Command: git push 
+
+At this point, there are 2 branches on GitHub. Main branch is at "2nd commit." and branch-1 is at "3rd commit, branch 1." 
+Went to '<> Code' tab on GitHub, clicked the '[branchSymbol] 2 branches' link and clicked '[symbol] New pull request' on 'branch-1'. 
+Put info in the pull request title and 'Write' tab, clicked 'Create pull request'. 
+Clicked 'Close pull request' (to see how it worked) and pull request was closed. 
+Clicked re-open pull request, then clicked the "Merge pull request, Create a merge commit" and "Confirm merge". 
+Then clicked "Delete branch" after merge was complete.
+
+At this point, 'branch-1' is deleted, and main branch has all the changes from branch-1, and main branch is the only branch.
+
+    Switch back to editing on main branch.
+        Command: git checkout main
+        Command: git branch
+            branch-1
+            * main
+
+The local repository is still showing both branch-1 and main. branch-1 has been deleted on the remote repository, but should also be deleted on the local repository.
+
+    Delete branch-1 from local repository
+        Command: git branch -d branch-1
+            warning: deleting branch 'branch-1' that has been merged to
+            'refs/remotes/origin/branch-1', but not yet merged to HEAD.
+            Deleted branch branch-1 (was ba6fa10).
+
+Not sure what the warning is about, branch-1 had a pull request and was merged into main branch.
+
+The local repository now only shows main branch.
+
+Tried to save all the above typed in but could not, VSCode threw a save error for everything that was after line 17. When I switched to main branch, the file I had open in VSCode did not reflect the main branch with the pull/merge of branch-1 but I continued to type notes in the file, so that must have caused the conflict.
+
+    Pull what is on the remote main branch into the file I had open in VSCode
+	    Command: git pull
+
+File open in VSCode now reflects remote main branch (lines 18-35 show up) and everything after (36-78) show up as new additions.
+
+
+Saved all the above edits (lines 36-78), commit to main branch, and push to remote repository via commands below.
+
+    3nd commit (main branch)
+        Command: git add .
+        Command: git commit -m "3rd commit."
+        Command: git push
