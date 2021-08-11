@@ -27,4 +27,9 @@
     2nd commit to branch-1 and push to remote repository
         Command: git add .
         Command: git commit -m "2nd commit, branch 1."    
-        Command: git push -u origin branch-1
+        Command: git push -u origin branch-1 <!--Did not need the '-u origin branch-1', that is only needed for the first push of a branch to a remote repository.-->
+
+    3rd commit to branch-1 and push to remote repository
+        Command: git add .
+        Command: git commit -m "3rd commit, branch 1."    
+        Command: git push 
