@@ -23,3 +23,8 @@
         Command: git add .
         Command: git commit -m "1st commit, branch 1."    
         Command: git push -u origin branch-1
+
+    2nd commit to branch-1 and push to remote repository
+        Command: git add .
+        Command: git commit -m "2nd commit, branch 1."    
+        Command: git push -u origin branch-1
