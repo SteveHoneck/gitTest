@@ -82,6 +82,14 @@ Checking how branches work when main is updated
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Updates to main will go here
+Clicked 'branch' button in bottom left corner of VS code, selected main.
+Now on main branch, lines 79 through 96 are not there (branch-2 updates from first commit), add these updates to main branch in what is marked 'update area' in branch-2(under line 84).
+     
+	4th commit (main branch)
+        VSCode: save        
+        Command: git add .
+        Command: git commit -m "4th commit."
+        Command: git push
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Create new branch, check it out
