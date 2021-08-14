@@ -102,3 +102,43 @@ Now on main branch, lines 79 through 96 are not there (branch-2 updates from fir
         Command: git push -u origin branch-2
 
 branch-2 should contain line 79 through 95, main should not
+
+
+Clicked 'branch' button in bottom left corner of VS code, selected branch-2.
+
+Now on branch-2, updates from main "4th commit." are not there.
+
+Process to update a branch based on changes in master (https://gist.github.com/whoisryosuke/36b3b41e738394170b9a7c230665e6b9)
+
+	Add changes from main to branch-2
+		Command: git merge main
+			CONFLICT (content): Merge conflict in commits.txt
+			Automatic merge failed; fix conflicts and then commit the result.
+
+Showed screen with Current Change and Incoming Change, things did not line up, so cut and past Incoming Change text into Current Change section where it was meant to go
+		VSCode: clicked "Accept Current Change"
+		VSCode: save
+		Command: git add .
+		Command: git commit -m "Update branch-2 from changes to main."
+		Command: git push
+
+Now, branch-2 contains the added text from main, but in a different spot than main.
+
+Created pull request from branch-2 page, branches were able to be automatically merged.
+
+Confirmed merge and deleted branch-2.
+
+Everything is in expected spot on github.
+
+Switch to main branch.
+
+Clicked 'branch' button in bottom left corner of VS code, selected main.
+
+Update local main with remote main that has the pull request completed.
+	Command: git pull
+
+Add all above notes (106 - 144) and commit to main
+		VSCode: save
+		Command: git add .
+		Command: git commit -m "Add notes for updating branch with changes to main."
+		Command: git push
