@@ -75,3 +75,18 @@ Saved all the above edits (lines 36-78), commit to main branch, and push to remo
         Command: git add .
         Command: git commit -m "3rd commit."
         Command: git push
+
+
+
+
+
+
+
+Clicked 'branch' button in bottom left corner of VS code, selected main.
+Now on main branch, lines 79 through 96 are not there (branch-2 updates from first commit), add these updates to main branch in what is marked 'update area' in branch-2(under line 84).
+     
+	4th commit (main branch)
+        VSCode: save        
+        Command: git add .
+        Command: git commit -m "4th commit."
+        Command: git push
