@@ -75,3 +75,22 @@ Saved all the above edits (lines 36-78), commit to main branch, and push to remo
         Command: git add .
         Command: git commit -m "3rd commit."
         Command: git push
+
+-------------------------------------------------
+
+Checking how branches work when main is updated
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Updates to main will go here
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Create new branch, check it out
+        Command: git checkout -b branch-2
+        VSCode: save
+
+    1st commit to branch-2 and push to remote repository
+        Command: git add .
+        Command: git commit -m "1st commit, branch 2."    
+        Command: git push -u origin branch-2
+
+branch-2 should contain line 79 through 95, main should not
